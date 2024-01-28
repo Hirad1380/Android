@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/nav_menu"
+        android:background="#707070"
+        app:itemTextColor="@drawable/selected"
+        app:itemIconTint="@drawable/selected"
+        app:labelVisibilityMode="selected"/>
+
+
+    <TextView
+        android:id="@+id/filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/nav_bar_setting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/image_switch_buton"
+        android:layout_marginTop="50dp"/>
+
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/image_switch_buton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/filter"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@+id/text_image_switch_button"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/title_switch_buton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_switch_buton"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@+id/text_title_switch_button"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/category_switch_buton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_switch_buton"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@+id/text_title_switch_button"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/price_switch_buton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/category_switch_buton"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@+id/text_title_switch_button"/>
+
+
+
+
+    <TextView
+        android:id="@+id/text_image_switch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/filter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/image_switch_buton"
+        android:text="Image"
+        android:layout_marginTop="30dp"/>
+
+
+    <TextView
+        android:id="@+id/text_title_switch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/image_switch_buton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/title_switch_buton"
+        android:text="Title"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/text_Category_switch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title_switch_buton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/category_switch_buton"
+        android:text="Category"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/text_price_switch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/category_switch_buton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/price_switch_buton"
+        android:text="Price"
+        android:layout_marginTop="30dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
